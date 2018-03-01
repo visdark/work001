@@ -1,0 +1,1512 @@
+/*
+Template Name: EPIC - LUNA
+Author URI: 
+Author Name: Ioana
+Version: 1.0
+*/
+
+/* --- TABLE OF CONTENT
+
+01. GENERAL LAYOUT
+02. MENU-NAV
+03. HOME
+04. ABOUT
+05. SERVICES/FEATURES
+06. GALLERY
+07. CONTACT & NEWSLETTER
+08. TEAM
+09. FOOTER
+10. OTHER ELEMENTS  
+11. RESPONSIVE
+
+--- */
+
+/* ========================================================== */
+/* 			               01. GENERAL LAYOUT                 */
+/* ========================================================== */
+
+ul, ol { 
+	list-style: none; 
+	list-style-image: none; 
+	margin: 0; 
+	padding: 0;
+	font-size: 14px;
+	line-height:24px;
+	margin-bottom:20px;
+}
+	
+ul li, ol li{
+	font-size: 14px;
+	line-height: 28px;
+}
+
+ul li i{
+	vertical-align: middle;
+}
+
+p {
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: 400;
+	margin-bottom:15px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a,
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  margin-bottom:20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-size: 42px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 18px;
+}
+
+ul {
+	padding: 0;
+}
+
+ul li{
+	list-style-type: none;
+}
+
+a:hover, a:focus, a:active, a:visited {
+	text-decoration: none;
+}
+
+iframe {
+    max-width: 100%;
+    border: none;
+}
+
+.white-text{ 
+	color: #fff!important;
+}
+
+.section-white {
+	background: #fff;
+	padding: 70px 0;
+}
+
+.section-white-xs{
+	background: #fff;
+	padding-top: 70px;
+	padding-bottom: 0;
+}
+
+.section-grey{
+	background: #f8f9fc;
+	padding: 70px 0;
+}
+
+.section-light{
+	background: #fffbfc;
+	padding: 70px 0;
+}
+
+.section-dark{
+	background-color: #201141;
+	padding:70px 0;
+}
+
+.section-dark-xl{
+	background-color: #201141;
+	padding-top:70px;
+	padding-bottom: 140px;
+}
+
+.width-100{
+	width: 100%;
+}
+
+/* margin and padding classes */
+
+.margin-right-25 {
+	margin-right: 25px !important;
+}
+
+.margin-top-110 {
+	margin-top: 110px !important;
+}
+
+.margin-top-100 {
+	margin-top: 100px !important;
+}
+
+.margin-top-90 {
+	margin-top: 90px !important;
+}
+
+.margin-top-80 {
+	margin-top: 80px !important;
+}
+
+.margin-top-60 {
+	margin-top: 60px !important;
+}
+
+.margin-top-50 {
+	margin-top: 50px !important;
+}
+
+.margin-top-40 {
+	margin-top: 40px !important;
+}
+
+.margin-top-35 {
+	margin-top: 35px !important;
+}
+
+.margin-top-30 {
+	margin-top: 30px !important;
+}
+
+.margin-top-20 {
+	margin-top: 20px !important;
+}
+
+.margin-top-10 {
+	margin-top: 10px !important;
+}
+
+.margin-top-5 {
+	margin-top: 5px !important;
+}
+
+.margin-bottom-0 {
+	margin-bottom: 0px !important;
+}
+
+.margin-bottom-10 {
+	margin-bottom: 10px !important;
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20px !important;
+}
+
+.margin-bottom-30 {
+	margin-bottom: 30px !important;
+}
+
+.margin-bottom-40 {
+	margin-bottom: 40px !important;
+}
+
+.margin-bottom-50 {
+	margin-bottom: 50px !important;
+}
+
+.margin-bottom-60 {
+	margin-bottom: 60px !important;
+}
+
+.margin-bottom-70 {
+	margin-bottom: 70px !important;
+}
+
+.margin-bottom-80 {
+	margin-bottom: 80px !important;
+}
+
+.margin-bottom-100 {
+	margin-bottom: 100px !important;
+}
+
+.margin-bottom-120 {
+	margin-bottom: 120px !important;
+}
+
+.margin-bottom-130 {
+	margin-bottom: 120px !important;
+}
+
+.margin-bottom-140 {
+	margin-bottom: 140px !important;
+}
+
+.padding-top-0 {
+	padding-top: 0px !important;
+}
+
+.padding-top-10 {
+	padding-top: 10px !important;
+}
+
+.padding-top-20 {
+	padding-top: 20px !important;
+}
+.padding-top-25 {
+	padding-top: 25px !important;
+}
+
+.padding-top-30 {
+	padding-top: 30px !important;
+}
+
+.padding-top-40 {
+	padding-top: 40px !important;
+}
+
+.padding-top-45 {
+	padding-top: 45px !important;
+}
+
+.padding-top-50 {
+	padding-top: 50px !important;
+}
+.padding-top-60 {
+	padding-top: 60px !important;
+}
+
+.padding-top-70 {
+	padding-top: 70px !important;
+}
+
+.padding-top-80 {
+	padding-top: 80px !important;
+}
+
+.padding-top-100 {
+	padding-top: 180px !important;
+}
+
+.padding-bottom-70 {
+	padding-bottom: 70px !important;
+}
+
+.padding-bottom-60 {
+	padding-bottom: 60px !important;
+}
+
+.padding-bottom-50 {
+	padding-bottom: 50px !important;
+}
+
+.padding-bottom-40 {
+	padding-bottom: 40px !important;
+}
+
+.padding-bottom-30 {
+	padding-bottom: 30px !important;
+}
+
+.padding-bottom-20 {
+	padding-bottom: 20px !important;
+}
+
+.padding-bottom-10 {
+	padding-bottom: 10px !important;
+}
+
+.padding-bottom-0 {
+	padding-bottom: 0px !important;
+}
+
+.margin-top-0 {
+	margin-top: 0px !important;
+}
+
+.padding-left-40{
+	padding-left: 60px;
+}
+
+/* ========================================================== */
+/* 			               02. MENU-NAV                       */
+/* ========================================================== */
+
+#logo img{	
+	width: 120px;
+	float: left;
+	margin-left: 70px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	padding: 0;
+}
+
+#navbar-collapse-02 li.selected a{
+    color: #fff!important;
+    border-bottom: 2px solid #eee!important;
+}
+
+.navbar-fixed-top #navbar-collapse-02 .current a {
+    color:#ffffff!important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.navbar-fixed-top.opaque #navbar-collapse-02 .current a {
+    color:#6376f7!important;
+     -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.navbar {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.navbar-fixed-top { 
+	background-color: transparent!important; 
+	border-bottom: none;
+	transition: background-color 1s ease 0s;
+}
+
+.navbar-fixed-top.opaque {
+	background-color: rgba(34,34,34, 0.95)!important;
+	padding: 10px 0;
+	transition: all 1s ease-in-out 0s;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover{
+
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.navbar-default .navbar-nav > li > a{
+	color:#fff !important;
+	font-size: 15px !important;
+	line-height: 30px !important;
+	text-transform: uppercase;
+	padding: 10px 20px!important;
+	font-family: 'Poppins', sans-serif;	
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+.navbar-default .navbar-toggle{
+    border-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+ul.nav.navbar-nav.navbar-right{
+	padding-top: 13px!important;
+}
+
+.navbar-brand {
+    padding: 15px 15px;
+    padding-top: 0!important;
+}
+
+/* ========================================================== */
+/* 			               03. HOME-LUNA                      */
+/* ========================================================== */
+
+.luna-homewrapper{
+	background: url(http://placehold.it/1920x1160) top center no-repeat;
+	background-size: cover;
+	padding: 180px 0;
+	position: relative;
+}
+
+.luna-homewrapper-overlay{
+	background: #412383;
+	opacity:0.7;
+	top:0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	position: absolute;
+}
+
+.luna-headings{
+	padding: 60px 40px;
+	position: relative;
+}
+
+.luna-headings h1{
+    font-size: 44px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.luna-headings p{
+	font-size: 16px; 
+	line-height: 28px;
+	color: #fff;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.luna-headings a, .luna-headings .popup-gallery{
+	display: inline-block;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top:20px;
+}
+
+.luna-headings a.luna-homebtn{
+	padding: 15px 25px;
+	border: 1px solid #fff;
+	background: transparent;
+	-webkit-border-radius: 25px 25px;
+    -moz-border-radius: 25px 25px;
+    border-radius: 25px 25px;
+    margin-right: 20px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+.luna-headings a.luna-homebtn:hover{
+	border: 1px solid #1a0b3b;
+	background: #1a0b3b;
+}
+
+.luna-headings .popup-gallery a.luna-video-icon{
+	padding: 15px 25px;
+	border: 1px solid #1a0b3b;
+	background: #1a0b3b;
+	-webkit-border-radius: 25px 25px;
+    -moz-border-radius: 25px 25px;
+    border-radius: 25px 25px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+.luna-headings .popup-gallery a.luna-video-icon:hover{
+	border: 1px solid #fff;
+	background: transparent;
+}
+
+.luna-headings .popup-gallery a.luna-video-icon i{
+	margin-right:13px; 
+}
+
+ul.luna-hero-social{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	padding: 10px 0;
+	margin-left: -78px;
+}
+
+ul.luna-hero-social li {
+	margin: 15px 10px;
+	display: inline;
+}
+
+ul.luna-hero-social li i{
+	font-size: 20px;
+	color: #fff;
+}
+
+/* ========================================================== */
+/* 			               04. ABOUT-LUNA                     */
+/* ========================================================== */
+
+.luna-headings-dark{
+	padding: 40px 10px 30px 10px;
+	position: relative;
+}
+
+.luna-headings-dark-center{
+	padding: 20px 10px 20px 10px;
+	position: relative;
+}
+
+.luna-headings-dark h2,
+.luna-headings-dark-center h2{
+	font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #6376f7;
+    margin-bottom: 25px;
+    margin-top: 10px!important;
+}
+
+.luna-headings-dark h3,
+.luna-headings-dark-center h3{
+	font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:#353535;
+}
+
+.luna-headings-dark p,
+.luna-headings-dark-center p{    
+	font-size: 16px;
+    line-height: 24px;
+    color: #8d909a;
+}
+
+.luna-aboutbox{
+	overflow: hidden;
+	margin: 20px 0;
+}
+
+.luna-aboutbox img{
+	width:12%;
+	float: left;
+	margin-top: 20px;
+	margin-right: 20px;
+	max-width: 50px;
+}
+
+.luna-aboutbox .luna-aboutbox-text{
+	width: 80%;
+	float: left;
+}
+
+.luna-aboutbox .luna-aboutbox-text h4{
+	font-size: 20px;
+    color:#353535;
+    margin-bottom: 10px;
+}
+
+.luna-aboutbox .luna-aboutbox-text p{
+	font-size: 14px;
+    line-height: 20px;
+    color: #8d909a;
+}
+
+
+/* ========================================================== */
+/* 			               05. SERVICES/FEATURES              */
+/* ========================================================== */
+
+.luna-headings-light{
+	padding: 10px 10px;
+}
+
+.luna-headings-light h2{
+	font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #8d909a;
+    margin-bottom: 25px;
+}
+
+.luna-headings-light h3{
+	font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:#dbdbdb;
+}
+
+.luna-headings-light p{
+	font-size: 16px;
+    line-height: 24px;
+    color: #dbdbdb;
+}
+
+.luna-headings-dark p{    
+	font-size: 16px;
+    line-height: 24px;
+    color: #8d909a;
+}
+
+.luna-featbox{
+	padding: 10px 10px;
+	margin-bottom: 20px;
+}
+
+.luna-featbox i{
+	font-size: 28px;
+	color: #fff;
+	margin-right: 10px;
+}
+
+.gradient {	
+    background: -webkit-gradient(linear, left top, left bottom, from(#7a43f2), to(#40c4ff));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.luna-featbox h3{
+	font-size: 18px;
+	color: #dbdbdb;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.luna-featbox p{	
+    font-size: 14px;
+    line-height: 22px;
+    color: #7e818a;
+}
+
+.luna-featbox2{
+	overflow: hidden;
+	display: block;
+	margin-bottom: 40px;	
+}
+
+.luna-featbox2 .luna-icon-wrap{
+	float: right;
+	padding: 5px 5px;
+	border: 2px solid #6376f7;
+	margin-top: 10px;
+
+	-webkit-border-radius: 50% 50%!important;
+    -moz-border-radius: 50% 50%!important;
+    border-radius: 50% 50%!important;
+}
+
+.luna-featbox2 .luna-featbox2-icon{	
+	float: right;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	-webkit-border-radius: 50% 50%;
+    -moz-border-radius: 50% 50%;
+    border-radius: 50% 50%;
+    background: #7a43f2; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left top, #7a43f2, #40c4ff); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #7a43f2, #40c4ff); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #7a43f2, #40c4ff); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #7a43f2, #40c4ff); /* Standard syntax */	
+	-o-transition: background-color 5s;
+	-webkit-transition: background-color 5s;
+	-moz-transition: background-color 5s;
+	-ms-transition: background-color 5s;
+	transition: background-color 5s;
+}
+
+.luna-featbox2 .luna-featbox2-icon i{
+	font-size: 32px;
+	line-height: 70px;
+	color: #fff;
+}
+
+.luna-featbox2 .luna-featbox2-text{
+	float: right;
+	text-align: right;
+	width: 70%;
+	margin-right: 20px;
+}
+
+.luna-featbox2 .luna-featbox2-text h3{
+	font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.luna-featbox2 .luna-featbox2-text p{
+	font-size: 14px;
+    line-height: 22px;
+    color: #7e818a;
+}
+
+.luna-featbox2:hover .luna-featbox2-icon{
+	background: #f8f9fc;
+    transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+}
+
+.luna-featbox2:hover .luna-featbox2-icon i{
+	background: -webkit-gradient(linear, left top, left bottom, from(#7a43f2), to(#40c4ff));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+}
+
+.luna-featbox3{
+	overflow: hidden;
+	display: block;
+	margin-top: 40px;	
+}
+
+.luna-featbox3 .luna-icon-wrap{
+	float: left;
+	padding: 5px 5px;
+	border: 2px solid #6376f7;
+	margin-top: 10px;
+	-webkit-border-radius: 50% 50%!important;
+    -moz-border-radius: 50% 50%!important;
+    border-radius: 50% 50%!important;
+}
+
+.luna-featbox3 .luna-featbox3-icon{	
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	-webkit-border-radius: 50% 50%;
+    -moz-border-radius: 50% 50%;
+    border-radius: 50% 50%;
+    background: #7a43f2; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left top, #7a43f2, #40c4ff); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #7a43f2, #40c4ff); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #7a43f2, #40c4ff); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #7a43f2, #40c4ff); /* Standard syntax */
+}
+
+.luna-featbox3 .luna-featbox3-icon i{
+	font-size: 32px;
+	line-height: 70px;
+	color: #fff;
+}
+
+.luna-featbox3 .luna-featbox3-text{
+	float: left;
+	text-align: left;
+	width: 70%;
+	margin-left: 20px;
+}
+
+.luna-featbox3 .luna-featbox3-text h3{
+	font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.luna-featbox3 .luna-featbox3-text p{
+	font-size: 14px;
+    line-height: 22px;
+    color: #7e818a;
+}
+
+.luna-featbox3:hover .luna-featbox3-icon{
+	background: transparent;
+    transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+}
+
+.luna-featbox3:hover .luna-featbox3-icon i{
+	background: -webkit-gradient(linear, left top, left bottom, from(#7a43f2), to(#40c4ff));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+}
+
+.luna-about-image{
+	display: block;
+	position: relative;
+	width:80%;
+	top:0;
+	margin-top: -260px;
+	left: 10%;
+}
+
+.luna-download img{
+	width: 200px;
+	margin: 10px 20px;
+}
+
+.section-image{
+	background: url(http://placehold.it/1920x1160) top center no-repeat;
+	background-size: cover;
+	padding: 70px 0;
+	min-height: 746px;
+}
+
+.section-image2{
+	background: url(http://placehold.it/1920x890) top center no-repeat;
+	background-size: cover;
+	padding: 70px 0;
+}
+
+/* ========================================================== */
+/* 			               06. GALLERY                        */
+/* ========================================================== */
+
+.owl-theme .owl-dots  {
+	display: none;
+}
+
+.owl-theme.owl-two .owl-dots  {
+	display: block;
+}
+
+.owl-theme.owl-two .owl-dots .owl-dot.active span,
+.owl-theme.owl-two .owl-dots .owl-dot:hover span{
+	background: #6376f7;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    color: #858585!important;
+    font-size: 26px!important;
+    background: transparent!important;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.owl-theme .owl-nav .owl-prev i:hover,
+.owl-theme .owl-nav .owl-next i:hover {
+    color: #6376f7!important;
+}
+
+.owl-theme.owl-two .owl-nav [class*=owl-] {
+    color: #fff!important;
+    font-size: 26px!important;
+    background: transparent!important;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.owl-carousel .owl-stage {
+	padding-bottom: 40px;
+}
+
+.owl-carousel{
+	margin-top: 10px;
+}
+
+/* ========================================================== */
+/* 			 07. REVIEW                                       */
+/* ========================================================== */
+
+.luna-reviewbox .luna-reviewbox-img img{
+	width: 120px!important;
+	-webkit-border-radius: 50% 50%!important;
+    -moz-border-radius: 50% 50%!important;
+    border-radius: 50% 50%!important;
+    display: inline-block!important;
+}
+
+.luna-reviewbox-img {
+	background: #fff;
+	padding: 3px;
+	-webkit-border-radius: 50% 50%!important;
+    -moz-border-radius: 50% 50%!important;
+    border-radius: 50% 50%!important;
+    display: inline-block!important;
+}
+
+.luna-reviewbox h4{	
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.luna-reviewbox span{	
+    font-size: 16px;
+    font-style: italic;
+    color: #fff;    
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: normal;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.luna-reviewbox p{	
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-style: italic;
+    color: #fff;
+}
+
+/* ========================================================== */
+/* 			 07. CONTACT & NEWSLETTER                         */
+/* ========================================================== */
+
+#contact-form {
+	margin:20px auto;
+	width:70%;
+}
+
+input.luna-contact-input{
+	width:100%;
+	height:55px;
+    padding-left:2%;
+    padding-right:2%;
+	margin-bottom:15px;
+	color: #fff;
+	background-color: #7e7e86;
+	opacity: 0.70;
+	border:none!important;
+    border: none!important;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+    text-align: left;
+	-webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+textarea.luna-contact-comment{
+	height:135px;
+	margin-bottom:15px;
+	width:100%;
+    padding-left:2%;
+    padding-right:2%;
+    padding-top:10px;
+    padding-bottom:10px;
+	color: #fff;
+	background-color: #7e7e86;
+	opacity: 0.70;
+    border: none!important;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+input.luna-contact-submit{
+    background: #6376f7;
+    border: 1px solid #6376f7;
+    padding: 10px 25px;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 20px;
+    -webkit-border-radius: 25px 25px;
+    -moz-border-radius: 25px 25px;
+    border-radius: 25px 25px;
+	transition: all 0.6s ease-in-out;
+	-webkit-transition: all 0.6s ease-in-out;
+}
+
+input.luna-contact-submit:hover{
+	background: #43257f;
+	border: 1px solid #43257f;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder { /* WebKit browsers */
+    color:#dbdbdb;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#dbdbdb;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#dbdbdb;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#dbdbdb;
+}
+
+#contact-form input.luna-contact-input:focus, 
+#contact-form textarea.luna-contact-comment:focus {
+  border-color:#fff;
+  outline: none;
+}
+
+p.contact_success_box{
+	display:inline-block;
+	color:#31353b;
+	font-size:20px;
+	font-style:italic;
+	padding:20px 20px;
+	border:1px solid #fff;
+	webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+/* ========================================================== */
+/* 			                08. PRICING                       */
+/* ========================================================== */
+
+.luna-pricebox{
+	text-align: center;
+	webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 30px auto;
+    width: 90%;
+}
+
+.price-top{
+	background: #7a43f2; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left top, #7a43f2, #40c4ff); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #7a43f2, #40c4ff); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #7a43f2, #40c4ff); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #7a43f2, #40c4ff); /* Standard syntax */
+	padding: 20px 20px;
+	webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 0 0;
+} 
+
+.price-top h4{	
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+} 
+
+.price-top h4{	
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 7px;	
+} 
+
+.price-top p.price {
+	color: #fff;
+    font-family: 'Open Sans', sans-serif;	
+} 
+
+.price-top p.price span.currency{
+	color: #fff;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 600;
+    vertical-align: top;
+    display: inline-block;	
+    margin-bottom: 5px;
+}
+
+.price-top p.price span.number{
+	color: #fff;
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 700;
+    margin-right: 7px;	
+}
+
+.price-top p.price span.period{
+	font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-top: 5px;	
+    font-style: italic;
+}
+
+.price-bottom{
+	padding: 30px 25px;
+	background: #fcfcfd;	
+	border: 2px solid #f8f8f8;
+}
+
+.price-bottom ul{
+	text-align: left;
+	color: #858585;
+}
+
+.price-bottom ul li{
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 600;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 5px 0;
+}
+
+.price-bottom ul li.last{
+	border-bottom: none;
+}
+
+.price-bottom ul li i{
+	margin-right: 15px;
+}
+
+.price-bottom ul li i.fa-check{
+	color: #66b16d;
+}
+
+.price-bottom ul li i.fa-close{
+	color: #f0644b;
+}
+
+.price-bottom a.btn-price{
+	background: #6376f7;
+	padding: 10px 20px;
+	display: inline-block;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 20px;
+	-webkit-border-radius: 25px 25px;
+    -moz-border-radius: 25px 25px;
+    border-radius: 25px 25px;
+	transition: all 0.6s ease-in-out;
+	-webkit-transition: all 0.6s ease-in-out;
+}
+
+.price-bottom a.btn-price:hover{
+	background: #43257f;
+}
+
+
+/* ========================================================== */
+/* 			                09. FOOTER                        */
+/* ========================================================== */
+
+.luna-footer {
+	background-color: #0e0f15;
+	padding: 40px 0
+}
+
+.luna-footerbox{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.luna-footerbox i{
+	font-size: 20px;
+	line-height: 28px;
+	color: #3b3f47;
+	margin-right: 7px;
+	display: inline;
+}
+
+.luna-footerbox p{
+	color: #3b3f47;
+	font-size: 13px;
+	line-height: 28px;
+	border-right: 1px solid #3b3f47;
+	padding-right: 10px;
+	margin-right: 10px;
+	display: inline;
+}
+
+.luna-footerbox span{	
+	margin-top: 5px;
+	font-size: 16px;
+	font-weight: 600;	
+	color: #3b3f47;
+	display: inline;	
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 3px;
+}
+
+.luna-copyright{
+	text-align: center;	
+	color: #3b3f47;
+	margin-top: 40px;
+}
+
+.luna-copyright a{
+	color: #6376f7;
+}
+
+/* ========================================================== */
+/* 			               10. OTHER ELEMENTS                 */
+/* ========================================================== */
+
+/* NEWSLETTER */
+
+input.newsletter-input::-webkit-input-placeholder {
+    color: #fff;
+}
+input.newsletter-input::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+input.newsletter-input:-ms-input-placeholder {
+    color: #fff;
+}
+
+input.newsletter-input:focus, input.newsletter-input:active {
+  border-color:none;
+  outline: none;
+}
+
+/* COUNTDOWN */
+
+ul#countdown {
+	margin-top: 60px;
+}
+
+ul#countdown li {	
+    font-family: 'Cairo', sans-serif;
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding:10px 10px;
+	width:90px;
+	height:90px;
+	background-color:transparent;
+	border:1px solid #a08160;
+	-webkit-border-radius: 8px 8px;
+    -moz-border-radius: 8px 8px;
+    border-radius: 8px 8px;
+  	text-align: center;
+	vertical-align:middle;
+}
+
+ul#countdown li span {
+	color:#a08160;
+  	font-size: 34px;
+	line-height:34px;
+  	font-weight: 500;
+  	position: relative;
+}
+
+ul#countdown li p.timeRefDays,
+ul#countdown li p.timeRefHours,
+ul#countdown li p.timeRefMinutes,
+ul#countdown li p.timeRefSeconds {
+	margin-top:3px;
+	color:#a08160;
+  	text-transform: uppercase;
+  	font-size: 14px;
+	line-height:14px;
+  	font-weight: 400;
+  	font-family: 'Cairo', sans-serif;
+}
+
+/* TABS */
+
+
+.tabs-nav ul{
+	text-align: center;
+	margin: 20px 0;
+}
+
+.tabs-nav ul li.tab-item-luna{
+	display: inline-block;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	border:1px solid #fff;
+	min-width: 152px;
+	text-align: center;
+	-webkit-border-radius: 25px 25px;
+    -moz-border-radius: 25px 25px;
+    border-radius: 25px 25px;
+    cursor: pointer;
+    margin: 10px 10px 10px 0;
+}
+
+.tabs-nav ul li.tab-item-luna.active{
+	display: inline-block;
+	color: #6376f7;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	border:1px solid #fff;
+	background: #fff;
+	min-width: 152px;
+	text-align: center;
+	-webkit-border-radius: 25px 25px;
+    -moz-border-radius: 25px 25px;
+    border-radius: 25px 25px;
+    cursor: pointer;
+    margin: 10px 10px 10px 0;
+}
+
+.tabs-nav ul li.tab-item-luna h4{
+	font-size: 16px;
+	font-weight: 500;
+	margin: 0;
+	letter-spacing: 1px;
+}
+
+.tab-container{
+	padding: 20px 10px;
+}
+
+.tab-content {
+	text-align: left;
+	padding: 0 20px;
+}
+
+.tab-content img{
+	width: 120px;
+	margin-bottom: 20px;
+}
+
+.tab-content p{
+	color: #fff;
+}
+
+.tab-content a{	
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    border: 1px solid #43257f;
+	padding: 7px 20px;
+	-webkit-border-radius: 25px 25px;
+    -moz-border-radius: 25px 25px;
+    border-radius: 25px 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    display:inline-block;
+    background: #43257f; 
+}
+
+.tab-content a i{	
+	margin-right: 5px;
+}
+
+.tab-content ul li{	
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.tab-content ul li i{	
+    margin-right: 10px;
+}
+
+/* Photos Hover Animations */
+
+
+.popup-gallery{
+	position:relative;
+}
+
+
+.popup-gallery img {
+	position:relative;
+	z-index:10;
+	width: 100%;
+	height: auto;
+	box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.3);
+    border: 4px solid rgba(255, 255, 255, 0.8);
+}
+
+.popup-gallery:hover img {
+	opacity: 0.25;
+}
+
+.popup-gallery a span.eye-wrapper {
+	background-color:#000;
+	position: absolute;
+	display: block;
+	overflow:hidden;
+	z-index: 2;
+	height:100%!important;
+	top: 0%;
+	margin-top: 0px;
+	left: 0%;
+	right: 0%;
+	font-size: 22px;
+	color:#fff;
+	text-align: center;
+	font-weight:300;
+	opacity: 0;
+	-webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.popup-gallery-rounded a span.eye-wrapper {
+	-webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.popup-gallery a span.eye-wrapper i.eye-icon{
+	position: absolute;
+	display: inline-block;
+	font-size:38px;
+	z-index: 3;
+	top: 50%!important;
+	margin-top: -19px!important;
+	left: 0%;
+	right: 0%;
+}
+
+.popup-gallery a:hover span{
+	opacity: 1;
+}
+
+.popup-gallery img,
+.popup-gallery a span {
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
+
+/* ========================================================== */
+/* 			               11. RESPONSIVE                     */
+/* ========================================================== */
+
+@media (min-width: 992px) and (max-width: 1280px){
+}
+
+@media (max-width: 991px) {
+	.section-white {padding: 40px 0;}
+	.section-dark{padding:40px 0;}
+	.section-grey{padding: 40px 0;}
+	.luna-imagewrap1 img{ width: 80%;}
+	.luna-imagewrap2 img{ width: 60%;}
+	.luna-pricebox{ width: 100%;}
+	.price-top p.price span.period{display: block;}
+}
+
+@media (max-width: 767px) {
+
+	.luna-featbox{padding: 10px 20px;}
+	.gallery-inner1{margin-right: -15px;}
+	.gallery-inner2{margin-left: -15px;	}
+	#contact-form{width: 90%;}
+	.tab-content{padding:0 10px;}
+	.section-image{background: url(../images/luna-image3.jpg) top right no-repeat;}
+}
+
+@media (max-width: 640px) {
+
+	.luna-homewrapper{padding: 90px 0;}
+	.luna-headings{	padding: 40px 40px; }
+
+	.luna-headings h1{
+	    font-size: 40px;
+	    line-height: 46px;
+	}
+
+	.luna-headings-dark {padding: 20px 10px;}
+	.luna-headings-dark-center {padding: 20px 10px;}
+
+	.luna-about-image{margin-top: -140px;}
+	.section-dark-xl{padding-bottom: 70px;}
+
+	.luna-featbox2 .luna-featbox2-text{	width: 65%;}
+	.luna-featbox3 .luna-featbox3-text{	width: 65%;}
+}
+
+@media (max-width: 480px) {
+
+	.luna-headings a.luna-homebtn{margin-right: 0;}
+	.luna-headings a, .luna-headings .popup-gallery{margin-top: 10px;}
+}
+
+
