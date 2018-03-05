@@ -436,7 +436,7 @@ ul.nav.navbar-nav.navbar-right{
 /* ========================================================== */
 
 .luna-homewrapper{
-	background: url(http://placehold.it/1920x1160) top center no-repeat;
+	background: url(../images/luna-heroimage.jpg) top center no-repeat;
 	background-size: cover;
 	padding: 180px 0;
 	position: relative;
@@ -831,7 +831,7 @@ ul.luna-hero-social li i{
 }
 
 .section-image{
-	background: url(http://placehold.it/1920x1160) top center no-repeat;
+	background: url(../images/luna-image3.jpg) top center no-repeat;
 	background-size: cover;
 	padding: 70px 0;
 	min-height: 746px;
